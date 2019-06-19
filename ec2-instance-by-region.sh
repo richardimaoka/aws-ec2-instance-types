@@ -11,7 +11,7 @@ do
           echo "option --region requires an argument -- $1" 1>&2
           exit 1
       fi
-      TARGET_REGION="$2"
+      REGION="$2"
       shift 2
       ;;
     -*)
@@ -32,7 +32,11 @@ fi
 ######################################
 # 2. Main processing
 ######################################
-for INSTANCE_TYPE in $(cat instance-types.txt)
+for INSTANCE_TYPE in $(cat instance-types.txt | grep -v "#")
 do
   echo "${INSTANCE_TYPE}"
+  aws ec2 run-instances \
+    --image-id "${SOURCE_IMAGE_ID}"
+    --instance-type "${SOURCE_INSTANCE_TYPE}" \
+    --region "${REGION}"
 done
