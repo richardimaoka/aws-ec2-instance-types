@@ -6,7 +6,7 @@ cd "$(dirname "$0")" || exit
 ######################################
 # 2. Main processing
 ######################################
-OUTPUT_FILE=instance_type_availability.json
+OUTPUT_FILE=output.json
 echo "{}" > "${OUTPUT_FILE}"
 for JSON_FILE in output/*.json
 do

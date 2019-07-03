@@ -41,7 +41,7 @@ m5.large
 #	m5d.12xlarge
 #	m5d.24xlarge
 #	m5d.metal
-# m5a.large
+m5a.large
 #	m5a.xlarge
 #	m5a.2xlarge
 #	m5a.4xlarge
