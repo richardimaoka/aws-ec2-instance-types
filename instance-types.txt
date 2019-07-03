@@ -1,11 +1,11 @@
 # As of 2019/06/20
 # General purpose
-a1.medium
+# a1.medium
 #	a1.large
 #	a1.xlarge
 #	a1.2xlarge
 #	a1.4xlarge
-#	t3.nano
+t3.nano
 t3.micro
 #	t3.small
 #	t3.medium
@@ -23,15 +23,16 @@ t3.micro
 t2.micro
 #	t2.small
 #	t2.medium
-#	t2.large
+t2.large
 #	t2.xlarge
 #	t2.2xlarge
 m5.large
 #	m5.xlarge
 #	m5.2xlarge
 #	m5.4xlarge
+#	m5.8xlarge
 #	m5.12xlarge
-#	m5.24xlarge
+# m5.24xlarge
 #	m5.metal
 #	m5d.large
 #	m5d.xlarge
@@ -40,7 +41,7 @@ m5.large
 #	m5d.12xlarge
 #	m5d.24xlarge
 #	m5d.metal
-m5a.large
+# m5a.large
 #	m5a.xlarge
 #	m5a.2xlarge
 #	m5a.4xlarge
@@ -174,3 +175,4 @@ m5a.large
 #	h1.4xlarge
 #	h1.8xlarge
 #	h1.16xlarge
+
