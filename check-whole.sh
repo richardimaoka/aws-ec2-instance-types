@@ -78,9 +78,12 @@ done
 # 3. Wait until the children complete
 ######################################
 echo "Wait until all the child processes are finished..."
-TEMP_FILE=$(mktemp)
 
+#Somehow VARIABLE=$(jobs -p) gets empty. So, need to use a file.
+TEMP_FILE=$(mktemp)
 jobs -p > "${TEMP_FILE}"
+
+# Read and go through the ${TEMP_FILE} lines
 while IFS= read -r PID
 do
   wait "${PID}"
